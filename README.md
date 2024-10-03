@@ -33,8 +33,9 @@ Este é o backend do projeto Wenlock, construído utilizando o framework [NestJS
    npm run start
    
 4.  **Documentação da API**:
-   ```bash
-   localhost:300/api
+   
+    ```bash
+    localhost:300/api
 
 
    
