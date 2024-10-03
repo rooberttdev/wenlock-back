@@ -3,6 +3,10 @@ steps:
     args: ['install']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'build']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'start']
 
-images:
-  - 'gcr.io/$PROJECT_ID/wenlock-back'
+timeout: '1200s'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
