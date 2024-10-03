@@ -35,13 +35,12 @@ Este é o backend do projeto Wenlock, construído utilizando o framework [NestJS
 4.  **Documentação da API**:
    
     ```bash
-    localhost:300/api
-
-  POST /users
-  GET /users
-  GET /users/{id}
-  PUT /users/{id}
-  DELETE /users/{id}
+     localhost:300/api
+     POST /users
+     GET /users
+     GET /users/{id}
+     PUT /users/{id}
+     DELETE /users/{id}
 
 
    
