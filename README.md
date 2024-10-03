@@ -12,8 +12,8 @@ Este é o backend do projeto Wenlock, construído utilizando o framework [NestJS
 
 ### Pré-requisitos
 
-- Node.js (>= 16.x.x)
-- NPM (>= 7.x.x) ou Yarn
+- Node.js (>= 16)
+- NPM (>= 7)
 - Banco de dados PostgreSQL ou MySQL
 
 ### Passos para Instalação
@@ -23,3 +23,12 @@ Este é o backend do projeto Wenlock, construído utilizando o framework [NestJS
    ```bash
    git clone https://github.com/SEU_USUARIO/wenlock-back.git
    cd wenlock-back
+2. **Instalando as dependências**:
+
+   ```bash
+   npm install
+3. **Rodar o servidor**:
+
+   ```bash
+   npm run start
+
