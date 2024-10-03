@@ -6,16 +6,23 @@ import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ isGlobal: true }),
+    // Carregar variáveis de ambiente de um arquivo .env (torna-se global)
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
+    // Configurar Sequelize com MySQL de forma assíncrona utilizando variáveis de ambiente
     SequelizeModule.forRootAsync({
-      imports: [ConfigModule],
-      inject: [ConfigService],
       useFactory: (configService: ConfigService) => ({
-        dialect: 'postgres',
-        url: configService.get<string>('DATABASE_URL'),
+        dialect: 'mysql',
+        host: configService.get<string>('DATABASE_HOST'),
+        port: +configService.get<number>('DATABASE_PORT'),
+        username: configService.get<string>('DATABASE_USER'),
+        password: configService.get<string>('DATABASE_PASSWORD'),
+        database: configService.get<string>('DATABASE_NAME'),
         autoLoadModels: true,
         synchronize: true,
       }),
+      inject: [ConfigService],
     }),
     UsersModule,
     AuthModule,
