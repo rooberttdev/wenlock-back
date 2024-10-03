@@ -6,11 +6,9 @@ import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
-    // Carregar variáveis de ambiente de um arquivo .env (torna-se global)
     ConfigModule.forRoot({
       isGlobal: true,
     }),
-    // Configurar Sequelize com MySQL de forma assíncrona utilizando variáveis de ambiente
     SequelizeModule.forRootAsync({
       useFactory: (configService: ConfigService) => ({
         dialect: 'mysql',
