@@ -3,11 +3,6 @@ steps:
     args: ['install']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'build']
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['app', 'deploy']
 
-options:
-  logging: CLOUD_LOGGING_ONLY 
-  logStreamingOption: STREAM_ON
-  machineType: 'N1_HIGHCPU_8'
-  defaultLogsBucket: 'wenlock-backend-bucket'
+images:
+  - 'gcr.io/$PROJECT_ID/wenlock-back'
