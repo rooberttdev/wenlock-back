@@ -39,5 +39,4 @@ async function bootstrap() {
   const port = 3001;
   await app.listen(port, '0.0.0.0');
 }
-//teste
 bootstrap();
