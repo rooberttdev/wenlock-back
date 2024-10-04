@@ -9,7 +9,7 @@ async function bootstrap() {
 
   app.enableCors({
     origin:
-      process.env.NODE_ENV === 'production' ? '*' : 'http://localhost:3000',
+      process.env.NODE_ENV === 'production' ? '*' : 'http://localhost:3001',
     methods: 'GET, POST, PUT, DELETE',
     allowedHeaders: 'Content-Type, Authorization',
   });
@@ -28,15 +28,14 @@ async function bootstrap() {
   const config = new DocumentBuilder()
     .setTitle('API de Gerenciamento de Usuários')
     .setDescription('Documentação da API para gerenciamento de usuários.')
-    .setVersion('1.0')
-    .addBearerAuth()
+    .setVersion('3.0')
     .addTag('users')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
 
-  const port = 3001;
+  const port = 80;
   await app.listen(port, '0.0.0.0');
 }
 bootstrap();
