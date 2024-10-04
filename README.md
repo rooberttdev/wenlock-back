@@ -17,6 +17,9 @@ Este é o backend do projeto Wenlock, construído utilizando o framework [NestJS
 - Banco de dados PostgreSQL ou MySQL
 - Docker
 
+### Cloud
+- Google Cloud para armazenar o Bando de Dados MySQL e o Back-end.
+
 ### Passos para Instalação
 
 1. **Clone o repositório**:
