@@ -6,7 +6,7 @@
 
 ## Descrição
 
-Este é o backend do projeto Wenlock, construído utilizando o framework [NestJS](https://nestjs.com/). O objetivo do Wenlock Backend é fornecer uma API RESTfull robusta e escalável para gerenciar usuários, realizar operações CRUD e integrar outras funcionalidades de backend.
+Este é o backend do projeto Wenlock, construído utilizando o framework [NestJS](https://nestjs.com/). O objetivo do Wenlock Backend é fornecer uma API RESTfull robusta e escalável para gerenciar usuários, realizar operações CRUD e integrar outras funcionalidades de backend. Acessar a documentação da [API](https://wenlock-bakcend-570703476738.southamerica-east1.run.app/api) em produção.
 
 ## Instalação
 
