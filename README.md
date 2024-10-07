@@ -12,13 +12,13 @@ Este é o backend do projeto Wenlock, construído utilizando o framework [NestJS
 
 ### Pré-requisitos
 
-- Node.js (>= 16)
-- NPM (>= 7)
+- Node.js 
+- NPM 
 - Banco de dados PostgreSQL ou MySQL
 - Docker
 
 ### Cloud
-- Google Cloud para armazenar o Bando de Dados MySQL e o Back-end.
+- Render para armazenar o Bando de Dados PostgreSQL e o Back-end.
 
 ### Passos para Instalação
 
