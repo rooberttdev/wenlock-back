@@ -6,12 +6,12 @@ import { AuthModule } from './auth/auth.module';
 @Module({
   imports: [
     SequelizeModule.forRoot({
-      dialect: 'mysql',
-      host: '35.198.56.143',
-      port: 3306,
-      username: 'admin-wenlock',
-      password: 'root',
-      database: 'wenlock_backend',
+      dialect: 'postgres',
+      host: 'dpg-crv52l08fa8c73cr9rtg-a',
+      port: 5432,
+      username: 'root',
+      password: 'vuqzbjTkBz17fe8pUiSyO189ZuhQarQ8',
+      database: 'wenlock',
       autoLoadModels: true,
       synchronize: true,
     }),
